@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MonoMood Result</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="card">
+
+    <h2 id="moodText"></h2>
+    <p id="quoteText"></p>
+    <p id="foodText"></p>
+
+  </div>
+</div>
+
+<script>
+  const mood = localStorage.getItem("mood");
+
+  if (mood === "happy") {
+    document.getElementById("moodText").innerText = "😊 You are feeling Happy";
+    document.getElementById("quoteText").innerText =
+      "Happiness is a choice. Choose it today 💛";
+    document.getElementById("foodText").innerText =
+      "Suggested treat: 🍫 Chocolate / 🍦 Ice Cream";
+  }
+
+  else if (mood === "sad") {
+    document.getElementById("moodText").innerText = "😢 You are feeling Sad";
+    document.getElementById("quoteText").innerText =
+      "It's okay to feel sad. Better days are coming 🌈";
+    document.getElementById("foodText").innerText =
+      "Suggested treat: ☕ Tea / 🍰 Cake";
+  }
+
+  else if (mood === "stress") {
+    document.getElementById("moodText").innerText = "😔 You are feeling Stressed";
+    document.getElementById("quoteText").innerText =
+      "Take a deep breath. You are stronger than you think 💪";
+    document.getElementById("foodText").innerText =
+      "Suggested treat: ☕ Green Tea / 🍪 Biscuits";
+  }
+
+  else if (mood === "love") {
+    document.getElementById("moodText").innerText = "❤️ You are feeling Love";
+    document.getElementById("quoteText").innerText =
+      "Love makes everything beautiful 💕";
+    document.getElementById("foodText").innerText =
+      "Suggested treat: 🍰 Cake / 🍓 Desserts";
+  }
+
+  else {
+    document.getElementById("moodText").innerText = "No mood selected";
+  }
+</script>
+
+</body>
+</html>
