@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MonoMood | Select Mood</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="mood-page">
+
+        <!-- Header -->
+        <div class="mood-header">
+
+            <a href="home.html" class="back-btn">←</a>
+
+            <div>
+                <p class="small-text">MonoMood</p>
+                <h1>How are you feeling?</h1>
+            </div>
+
+        </div>
+
+
+        <!-- Introduction -->
+        <div class="mood-intro">
+
+            <span>💭</span>
+
+            <p>
+                Take a moment to check in with yourself.
+                There is no right or wrong answer.
+            </p>
+
+        </div>
+
+
+        <!-- Mood Options -->
+        <div class="mood-grid">
+
+            <div class="mood-option" onclick="selectMood('Happy', '😊')">
+                <span>😊</span>
+                <h3>Happy</h3>
+                <p>Feeling good</p>
+            </div>
+
+            <div class="mood-option" onclick="selectMood('Sad', '😔')">
+                <span>😔</span>
+                <h3>Sad</h3>
+                <p>Feeling low</p>
+            </div>
+
+            <div class="mood-option" onclick="selectMood('Calm', '😌')">
+                <span>😌</span>
+                <h3>Calm</h3>
+                <p>Feeling peaceful</p>
+            </div>
+
+            <div class="mood-option" onclick="selectMood('Anxious', '😰')">
+                <span>😰</span>
+                <h3>Anxious</h3>
+                <p>Feeling worried</p>
+            </div>
+
+            <div class="mood-option" onclick="selectMood('Angry', '😡')">
+                <span>😡</span>
+                <h3>Angry</h3>
+                <p>Feeling frustrated</p>
+            </div>
+
+            <div class="mood-option" onclick="selectMood('Tired', '😴')">
+                <span>😴</span>
+                <h3>Tired</h3>
+                <p>Need some rest</p>
+            </div>
+
+            <div class="mood-option" onclick="selectMood('Loved', '❤️')">
+                <span>❤️</span>
+                <h3>Loved</h3>
+                <p>Feeling connected</p>
+            </div>
+
+            <div class="mood-option" onclick="selectMood('Excited', '🤩')">
+                <span>🤩</span>
+                <h3>Excited</h3>
+                <p>Feeling energetic</p>
+            </div>
+
+        </div>
+
+
+        <p class="mood-footer">
+            Your feelings are valid 💜
+        </p>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

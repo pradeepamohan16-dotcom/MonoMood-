@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MonoMood | Your Mood</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="result-page">
+
+        <!-- Back -->
+        <a href="mood.html" class="back-btn">←</a>
+
+        <!-- Mood Header -->
+        <div class="result-header">
+
+            <p class="small-text">Your Mood Today</p>
+
+            <div id="resultEmoji" class="result-emoji">😊</div>
+
+            <h1 id="resultMood">Happy</h1>
+
+            <p>Here is something specially for you 💜</p>
+
+        </div>
+
+
+        <!-- Quote -->
+        <div class="result-card quote-card">
+
+            <div class="card-icon">💬</div>
+
+            <h3>Your Quote</h3>
+
+            <p id="moodQuote">
+                Believe in yourself. Good things are coming your way.
+            </p>
+
+        </div>
+
+
+        <!-- Positive Affirmation -->
+        <div class="result-card">
+
+            <div class="card-icon">✨</div>
+
+            <h3>Positive Affirmation</h3>
+
+            <p id="moodAffirmation">
+                I deserve happiness, peace and good moments.
+            </p>
+
+        </div>
+
+
+        <!-- Music -->
+        <div class="result-card music-card">
+
+            <div class="music-title">
+
+                <div class="card-icon">🎵</div>
+
+                <div>
+                    <h3>Music For Your Mood</h3>
+                    <p id="musicName">Peaceful Moments</p>
+                </div>
+
+            </div>
+
+            <audio id="moodMusic" controls>
+                <source src="" type="audio/mpeg">
+                Your browser does not support audio.
+            </audio>
+
+        </div>
+
+
+        <!-- Reminder -->
+        <div class="result-card">
+
+            <div class="card-icon">🌱</div>
+
+            <h3>A Little Reminder</h3>
+
+            <p id="moodAdvice">
+                Take a moment to appreciate the little things around you.
+            </p>
+
+        </div>
+
+
+        <!-- Activity -->
+        <div class="result-card activity-card">
+
+            <div class="card-icon">🌿</div>
+
+            <h3>Try This</h3>
+
+            <p id="moodActivity">
+                Take a few minutes to enjoy something that makes you happy.
+            </p>
+
+        </div>
+
+
+        <!-- Journal Button -->
+        <button class="continue-btn" onclick="goToJournal()">
+            Write in My Journal 📔
+        </button>
+
+
+        <!-- Home Button -->
+        <button class="home-btn" onclick="goToHome()">
+            Back to Home 🏠
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

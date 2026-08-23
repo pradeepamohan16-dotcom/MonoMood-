@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MonoMood | My Journal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="journal-page">
+
+        <a href="result.html" class="back-btn">←</a>
+
+        <!-- Header -->
+        <div class="journal-header">
+
+            <div class="journal-icon">📔</div>
+
+            <p class="small-text">My Journal</p>
+
+            <h1>Write Your Thoughts</h1>
+
+            <p>
+                Take a moment to write what is on your mind 💜
+            </p>
+
+        </div>
+
+
+        <!-- Today's Mood -->
+        <div class="journal-card">
+
+            <h3>Today's Mood</h3>
+
+            <div class="today-mood">
+                <span id="journalEmoji">😊</span>
+                <strong id="journalMood">Happy</strong>
+            </div>
+
+        </div>
+
+
+        <!-- Writing -->
+        <div class="journal-card">
+
+            <label for="journalText">
+                How are you feeling today?
+            </label>
+
+            <textarea
+                id="journalText"
+                placeholder="Write your thoughts here... ✍️"></textarea>
+
+        </div>
+
+
+        <!-- Buttons -->
+        <div class="journal-buttons">
+
+            <button class="save-journal-btn" onclick="saveJournal()">
+                Save Journal 💜
+            </button>
+
+            <button class="history-btn" onclick="goToJournalHistory()">
+                View My Journal 📖
+            </button>
+
+            <button class="home-btn" onclick="goToHome()">
+                Back to Home 🏠
+            </button>
+
+            <p id="saveMessage"></p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
